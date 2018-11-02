@@ -1,0 +1,47 @@
+/***********************************
+Navigation bar
+************************************/
+
+.navbar-default .navbar-brand {
+    color: #5FCF80;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    height: 60px;
+}
+
+.course-text {
+    padding: 84px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #717f86;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navbar-nav>li>a {
+    padding: 0px;
+    margin: 10px 5px;
+    padding: 10px 15px;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #5FCF80;
+}
+
+.navbar-nav .active a {
+    background: none !important;
+    color: #5FCF80 !important;
+    outline: none;
+}
+.img
+{
+    margin-top:3px;
+}
+.actions
+{
+    margin-left:300px;
+}

@@ -1,0 +1,7 @@
+.box{
+    position: fixed;
+}
+.navbar-default {
+    background-color:lightgreen;
+    border-color: #e7e7e7;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+  <!--Importanto fonte Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!--Adicionando o ícone no navegador-->
+  <link rel="shortcut icon" href="img/lamp.ico" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <title>Prova</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Aqui chamamos o nosso arquivo css externo -->
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/style3.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                        </button>
+              <a class="navbar-brand" href="index.html"><img class="logo" src="img/logosimula.png" width="120px"></img></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#portugues.html"><img class="logo" src="img/iconp.png" style="margin-left:-30px; margin-top:5px;" width="27%">Português</a></li>
+                <li><a href="#organisations"><img class="logo" src="img/iconm.png" style="margin-left:-30px; margin-top:5px;" width="25%">Matemática</a></li>
+                <li><a href="#courses"><img class="logo" src="img/iconh.png" style="margin-left:-30px; margin-top:5px;" width="35%">História</a></li>
+                <li><a href="#pricing"><img class="logo" src="img/icong.png" style="margin-left:-30px; margin-top:5px;" width="27%">Geografia</a></li>
+                <li><a href="#login"><img class="logo" src="img/iconcc.png" style="margin-left:-30px; margin-top:5px;" width="30%">Ciências</a></li>
+                <li><a href="#login"><img class="logo" src="img/icont.png" style="margin-left:-30px; margin-top:5px;" width="20%">Prova Completa</a></li>
+              </ul>
+              <p id="demo"></p>
+            </div>
+
+            <script>
+              var countDownDate = new Date("8 December 2025 4:30:00").getDate();
+              var x = setInterval(function() {
+                var now = new Date().getDate();
+                var distance = countDownDate - now;
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 4)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("over").innerHTML = hours + "h " +
+                  minutes + "m " + seconds + "s ";
+
+                if (distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("over").innerHTML = "TEMPO ESGOTADO, CANDIDATO !";
+
+                }
+              }, 1000);
+            </script>
+          </div>
+      </div>
+      </nav>
+      <br><br>
+      <p>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="box">
+              <img style="margin-left:5px;" src="img/questao1.png"></img>
+            </div>
+          </div>
+          <div class="questao">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> Questão 01
+            <p>
+
+              <input type="radio" name="q01" />A
+              <input type="radio" name="q01" />B
+              <input type="radio" name="q01" />C
+              <input type="radio" name="q01" />D
+              <input type="radio" name="q01" />E
+          </div>
+          <div class="questao">
+            Questão 02
+            <p>
+
+              <input type="radio" name="q02" />A
+              <input type="radio" name="q02" />B
+              <input type="radio" name="q02" />C
+              <input type="radio" name="q02" />D
+              <input type="radio" name="q02" />E
+          </div>
+          <div class="bot">
+            <button type="button" class="btn btn-danger btn-sm">Cancelar</button>
+            <button type="button" class="btn btn-success btn-sm">Proxima</button>
+            <br>
+          </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+  <!--Adicionando o ícone no navegador-->
+  <link rel="shortcut icon" href="img/lamp.ico" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <title>Site SimulaTec</title>
+  <!-- Aqui chamamos o nosso arquivo css externo -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style7.css"/>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="index.html"><img src="img/logosimula.png" width="120px" id="imgSimula"></img></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.vestibulinhoetec.com.br/unidades-cursos/">Sobre as ETECs</a></li>
+            <li><a href="siteEmp/ti.html">Quem Somos ?</a></li>
+            <li><a href="https://www.vestibulinhoetec.com.br/duvidas-frequentes/">Sobre o vestibulinho</a></li>
+            <!--<li><a href="logado.html">Logado</a></li>-->
+            <li><a id="myBtn">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<div id="main" class="container-fluid" style="margin-top: 50px">
+ 
+ 	<div id="top" class="row">
+		<div class="col-sm-3">
+			<h2>Administradores</h2>
+		</div>
+		<div class="col-sm-6">
+			
+			<div class="input-group h2">
+				<input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Itens">
+				<span class="input-group-btn">
+					<button class="btn btn-primary" type="submit">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</span>
+			</div>
+			
+		</div>
+		<div class="col-sm-3">
+			<a href="add.html" class="btn btn-primary pull-right h2">Novo cadastro</a>
+		</div>
+	</div> <!-- /#top -->
+ 
+ 
+ 	<hr />
+ 	<div id="list" class="row">
+	
+	<div class="table-responsive col-md-12">
+		<table class="table table-striped" cellspacing="0" cellpadding="0">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Nome</th>
+					<th>Nível</th>
+					<th>E-mail</th>
+					<th class="actions">Ações</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1001</td>
+					<td>Admin tal</td>
+					<td>Jes</td>
+					<td>01/01/2015</td>
+					<td class="actions">
+						<a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
+						<a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
+						<a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+	
+	</div> <!-- /#list -->
+	
+ <!-- /#bottom -->
+ </div> <!-- /#main -->
+
+<!-- Modal -->
+<div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="modalLabel">Excluir Administrador</h4>
+      </div>
+      <div class="modal-body">
+        Deseja realmente excluir este ADMINISTRADOR?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Sim</button>
+	<button type="button" class="btn btn-default" data-dismiss="modal">N&atilde;o</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
