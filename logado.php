@@ -16,6 +16,18 @@
     session_start();
     
     if(!isset($_SESSION['user']));
+    
+     
+  	  $codigo = $_GET['id'];
+	    var_dump($codigo);
+	
+	    $username = 'leonardes';
+	    $login = '';
+      $con = new PDO('mysql:host=localhost;dbname=Simulado', $username, $login);
+    
+      $rs = $con->query("SELECT * FROM tb_usuario WHERE cd_usuario = '$codigo'"); 
+          
+    	$users = $rs->fetch(PDO::FETCH_OBJ);
   
 ?>
     <!--Adicionando o ícone no navegador-->
@@ -56,7 +68,7 @@
             </li>
               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> <i class="fas fa-cog"></i> <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a id="zebct" href="alterarCadUsu.php"><i style="margin-left:-20px;" class="fas fa-user"></i> Alterar Perfil</a></li>
+                <li><a id="zebct" href="alterarCadUsu.php" onclick="javascript: location.href='alterarCadUsu.php?id=<?php echo $users->cd_usuario?>'"><i style="margin-left:-20px;" class="fas fa-user"></i> Alterar Perfil</a></li>
                 <li><a id="zebct" href="sair.php"><i style="margin-left:-20px;" class="fas fa-sign-out-alt"></i> Sair</a></li>
               </ul>
             </li>

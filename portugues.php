@@ -221,6 +221,10 @@ p
     {
       margin-top:-10px;
     }
+    #demo
+    {
+      margin-left:30px;
+    }
 }
  @media only screen and (max-width: 412px) {
     .box {

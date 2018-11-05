@@ -87,7 +87,7 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
 
 #botoes{
     text-align:center; 
-    margin-top: 100px
+    margin-top: 2400px
 }
 
 #btn:hover{
@@ -183,4 +183,10 @@ h11 {
 
 #lblSenha{
     width: 235px;
+}
+@media only screen and (max-width: 360px) {
+    #cadastrar
+    {
+        color:Red;
+    }
 }

@@ -1,0 +1,11 @@
+leonardes:~/workspace (master) $ git init
+Reinitialized existing Git repository in /home/ubuntu/workspace/.git/
+leonardes:~/workspace (master) $ git add .
+leonardes:~/workspace (master) $ git commit -m "initial commit"
+On branch master
+nothing to commit, working tree clean
+leonardes:~/workspace (master) $ git remote add origin https://github.com/GabrielaMarculino/Simulatec-TCC.git
+fatal: remote origin already exists.
+leonardes:~/workspace (master) $ git push -u origin master
+Username for 'https://github.com': GabrielaMarculino
+Password for 'https://GabrielaMarculino@github.com': 

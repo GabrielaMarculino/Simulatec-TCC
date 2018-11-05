@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <!--Adicionando o ícone no navegador-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="shortcut icon" href="img/lamp.ico" type="image/x-icon" />
   </script>
   	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -127,13 +128,20 @@
 <div class="row">
   <div class="button-test">
   <label class="col-md-2 control-label" for="Cadastrar"></label>
-  <div class="col-xs-8">
+  <div class="col-xs-8" id="colBtns">
     <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="submit">Cadastrar</button>
-    <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
+    <button id="Cancelar"  name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
   </div>
 </div>
 </div>
 </div>
 </form>
 </body>
+  <style type="text/css">
+    #colBtns
+    {
+      margin-left:50px;
+      margin-top:-15px;
+    }
+  </style>
 </html>
